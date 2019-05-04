@@ -724,206 +724,110 @@ public class lol
     {
         switch (isoVal) {
             case 0:
-                return new long[]{Shutter_AE, ISO_AE};
+                return new long[]{Shutter_AE};
+//            case 1:
+//                return new long[]{SYS_SHUTTER, SYS_ISO};
+//            case 2:
+//                long div = Shutter_AE/SYS_SHUTTER;
+//
+//                return new long[]{Shutter_AE, SYS_ISO/div};
+//            case 3:
+//                return new long[]{Shutter_AE, 200};
+//            case 4:
+//                return new long[]{Shutter_AE, 400};
+//            case 5:
+//                return new long[]{Shutter_AE, 800};
+//            case 6:
+//                return new long[]{Shutter_AE, 1600};
+//            case 7:
+//                return new long[]{Shutter_AE, 3200};
+//            case 8:
+//                return new long[]{Shutter_AE, 6400};
+//            case 9:
+//                return new long[]{Shutter_AE, 9600};
+//            case 10:
+//                return new long[]{Shutter_AE, 12800};
+//            case 11:
+//                return new long[]{Shutter_AE, 25600};
+//            case 12:
+//                return new long[]{Shutter_AE, 32000};
+//            case 13:
+//                return new long[]{Shutter_AE, 51200};
+//            case 14:
+//                return new long[]{Shutter_AE, 64000};
+//            case 15:
+//                return new long[]{Shutter_AE, 85000};
+//            case 16:
+//                return new long[]{Shutter_AE, 102400};
+
             case 1:
-                return new long[]{SYS_SHUTTER, SYS_ISO};
+                return new long[]{getShutter(1)};
             case 2:
-                long div = Shutter_AE/SYS_SHUTTER;
-
-                return new long[]{Shutter_AE, SYS_ISO/div};
+                return new long[]{getShutter(2)};
             case 3:
-                return new long[]{Shutter_AE, 200};
+                return new long[]{getShutter(3)};
             case 4:
-                return new long[]{Shutter_AE, 400};
+                return new long[]{getShutter(4)};
             case 5:
-                return new long[]{Shutter_AE, 800};
+                return new long[]{getShutter(5)};
             case 6:
-                return new long[]{Shutter_AE, 1600};
+                return new long[]{getShutter(6)};
             case 7:
-                return new long[]{Shutter_AE, 3200};
+                return new long[]{getShutter(7)};
             case 8:
-                return new long[]{Shutter_AE, 6400};
+                return new long[]{getShutter(8)};
             case 9:
-                return new long[]{Shutter_AE, 9600};
+                return new long[]{getShutter(9)};
             case 10:
-                return new long[]{Shutter_AE, 12800};
+                return new long[]{getShutter(10)};
             case 11:
-                return new long[]{Shutter_AE, 25600};
+                return new long[]{getShutter(11)};
             case 12:
-                return new long[]{Shutter_AE, 32000};
+                return new long[]{getShutter(12)};
             case 13:
-                return new long[]{Shutter_AE, 51200};
+                return new long[]{getShutter(13)};
             case 14:
-                return new long[]{Shutter_AE, 64000};
+                return new long[]{getShutter(14)};
             case 15:
-                return new long[]{Shutter_AE, 85000};
+                return new long[]{getShutter(15)};
             case 16:
-                return new long[]{Shutter_AE, 102400};
-
-            case (1+16):
-                return new long[]{getShutter(1), getISO(1)};
-            case 2+16:
-                return new long[]{getShutter(2), getISO(1)};
-            case 3+16:
-                return new long[]{getShutter(3), getISO(1)};
-            case 4+16:
-                return new long[]{getShutter(4), getISO(1)};
-            case 5+16:
-                return new long[]{getShutter(5), getISO(1)};
-            case 6+16:
-                return new long[]{getShutter(6), getISO(1)};
-            case 7+16:
-                return new long[]{getShutter(7), getISO(1)};
-            case 8+16:
-                return new long[]{getShutter(8), getISO(1)};
-            case 9+16:
-                return new long[]{getShutter(1), getISO(2)};
-            case 10+16:
-                return new long[]{getShutter(2), getISO(2)};
-            case 11+16:
-                return new long[]{getShutter(3), getISO(2)};
-            case 12+16:
-                return new long[]{getShutter(4), getISO(2)};
-            case 13+16:
-                return new long[]{getShutter(5), getISO(2)};
-            case 14+16:
-                return new long[]{getShutter(6), getISO(2)};
-            case 15+16:
-                return new long[]{getShutter(7), getISO(2)};
-            case 16+16:
-                return new long[]{getShutter(8), getISO(2)};
-            case 17+16:
-                return new long[]{getShutter(1), getISO(3)};
-            case 18+16:
-                return new long[]{getShutter(2), getISO(3)};
-            case 19+16:
-                return new long[]{getShutter(3), getISO(3)};
-            case 20+16:
-                return new long[]{getShutter(4), getISO(3)};
-            case 21+16:
-                return new long[]{getShutter(5), getISO(3)};
-            case 22+16:
-                return new long[]{getShutter(6), getISO(3)};
-            case 23+16:
-                return new long[]{getShutter(7), getISO(3)};
-            case 24+16:
-                return new long[]{getShutter(8), getISO(3)};
-            case 25+16:
-                return new long[]{getShutter(1), getISO(4)};
-            case 26+16:
-                return new long[]{getShutter(2), getISO(4)};
-            case 27+16:
-                return new long[]{getShutter(3), getISO(4)};
-            case 28+16:
-                return new long[]{getShutter(4), getISO(4)};
-            case 29+16:
-                return new long[]{getShutter(5), getISO(4)};
-            case 30+16:
-                return new long[]{getShutter(6), getISO(4)};
-            case 31+16:
-                return new long[]{getShutter(7), getISO(4)};
-            case 32+16:
-                return new long[]{getShutter(8), getISO(4)};
-            case 33+16:
-                return new long[]{getShutter(1), getISO(5)};
-            case 34+16:
-                return new long[]{getShutter(2), getISO(5)};
-            case 35+16:
-                return new long[]{getShutter(3), getISO(5)};
-            case 36+16:
-                return new long[]{getShutter(4), getISO(5)};
-            case 37+16:
-                return new long[]{getShutter(5), getISO(5)};
-            case 38+16:
-                return new long[]{getShutter(6), getISO(5)};
-            case 39+16:
-                return new long[]{getShutter(7), getISO(5)};
-            case 40+16:
-                return new long[]{getShutter(8), getISO(5)};
-            case 41+16:
-                return new long[]{getShutter(1), getISO(6)};
-            case 42+16:
-                return new long[]{getShutter(2), getISO(6)};
-            case 43+16:
-                return new long[]{getShutter(3), getISO(6)};
-            case 44+16:
-                return new long[]{getShutter(4), getISO(6)};
-            case 45+16:
-                return new long[]{getShutter(5), getISO(6)};
-            case 46+16:
-                return new long[]{getShutter(6), getISO(6)};
-            case 47+16:
-                return new long[]{getShutter(7), getISO(6)};
-            case 48+16:
-                return new long[]{getShutter(8), getISO(6)};
-            case 49+16:
-                return new long[]{getShutter(1), getISO(7)};
-            case 50+16:
-                return new long[]{getShutter(2), getISO(7)};
-            case 51+16:
-                return new long[]{getShutter(3), getISO(7)};
-            case 52+16:
-                return new long[]{getShutter(4), getISO(7)};
-            case 53+16:
-                return new long[]{getShutter(5), getISO(7)};
-            case 54+16:
-                return new long[]{getShutter(6), getISO(7)};
-            case 55+16:
-                return new long[]{getShutter(7), getISO(7)};
-            case 56+16:
-                return new long[]{getShutter(8), getISO(7)};
-            case 57+16:
-                return new long[]{getShutter(1), getISO(8)};
-            case 58+16:
-                return new long[]{getShutter(2), getISO(8)};
-            case 59+16:
-                return new long[]{getShutter(3), getISO(8)};
-            case 60+16:
-                return new long[]{getShutter(4), getISO(8)};
-            case 61+16:
-                return new long[]{getShutter(5), getISO(8)};
-            case 62+16:
-                return new long[]{getShutter(6), getISO(8)};
-            case 63+16:
-                return new long[]{getShutter(7), getISO(8)};
-            case 64+16:
-                return new long[]{getShutter(8), getISO(8)};
-            case 65+16:
-                return new long[]{getShutter(1), getISO(9)};
-            case 66+16:
-                return new long[]{getShutter(2), getISO(9)};
-            case 67+16:
-                return new long[]{getShutter(3), getISO(9)};
-            case 68+16:
-                return new long[]{getShutter(4), getISO(9)};
-            case 69+16:
-                return new long[]{getShutter(5), getISO(9)};
-            case 70+16:
-                return new long[]{getShutter(6), getISO(9)};
-            case 71+16:
-                return new long[]{getShutter(7), getISO(9)};
-            case 72+16:
-                return new long[]{getShutter(8), getISO(9)};
-            case 73+16:
-                return new long[]{getShutter(1), getISO(10)};
-            case 74+16:
-                return new long[]{getShutter(2), getISO(10)};
-            case 75+16:
-                return new long[]{getShutter(3), getISO(10)};
-            case 76+16:
-                return new long[]{getShutter(4), getISO(10)};
-            case 77+16:
-                return new long[]{getShutter(5), getISO(10)};
-            case 78+16:
-                return new long[]{getShutter(6), getISO(10)};
-            case 79+16:
-                return new long[]{getShutter(7), getISO(10)};
-            case 80+16:
-                return new long[]{getShutter(8), getISO(10)};
-            case 81+16:
-                return new long[]{ISO_100(), getISO(1)};
+                return new long[]{getShutter(16)};
             default:
-                return new long[]{getShutter(8), getISO(1)};
+                return new long[]{getShutter(0)};
+        }
+
+
+    }
+
+    public static long[] getSLIDER2()
+    {
+        switch (isoVal) {
+            case 0:
+                return new long[]{ISO_AE};
+            case 1:
+                return new long[]{getISO(1)};
+            case 2:
+                return new long[]{getISO(2)};
+            case 3:
+                return new long[]{getISO(3)};
+            case 4:
+                return new long[]{getISO(4)};
+            case 5:
+                return new long[]{getISO(5)};
+            case 6:
+                return new long[]{getISO(6)};
+            case 7:
+                return new long[]{getISO(7)};
+            case 8:
+                return new long[]{getISO(8)};
+            case 9:
+                return new long[]{getISO(9)};
+            case 10:
+                return new long[]{getISO(10)};
+            case 11:
+                return new long[]{getISO(11)};
+            default:
+                return new long[]{getISO(0)};
         }
 
 
@@ -992,13 +896,29 @@ public class lol
             case 4:
                 return 8*S_2_NS;
             case 5:
-                return 10*S_2_NS;
-            case 6:
                 return 16*S_2_NS;
-            case 7:
-                return 21509076830L;
-            case 8:
+            case 6:
                 return 32*S_2_NS;
+            case 7:
+                return S_2_NS/2;
+            case 8:
+                return S_2_NS/4;
+            case 9:
+                return S_2_NS/8;
+            case 10:
+                return S_2_NS/15;
+            case 11:
+                return S_2_NS/30;
+            case 12:
+                return S_2_NS/60;
+            case 13:
+                return S_2_NS/125;
+            case 14:
+                return S_2_NS/250;
+            case 15:
+                return S_2_NS/500;
+            case 16:
+                return S_2_NS/1000;
             default:
                 return S_2_NS;
         }
